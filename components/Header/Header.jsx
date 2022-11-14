@@ -37,7 +37,7 @@ const Header = () => {
         <nav className="flex gap-x-8">
           {links.map((item, index) => {
             return (
-              <Link href={item.href} style="primary" key={index}>
+              <Link href={item.href} style="primary" as="link" key={index}>
                 {item.name}
               </Link>
             );

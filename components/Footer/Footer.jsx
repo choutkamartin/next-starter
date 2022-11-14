@@ -80,7 +80,9 @@ const Footer = () => {
                 {item.children.map((child, index) => {
                   return (
                     <li key={index}>
-                      <Link href={child.href}>{child.name}</Link>
+                      <Link href={child.href} as="link">
+                        {child.name}
+                      </Link>
                     </li>
                   );
                 })}
