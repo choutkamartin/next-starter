@@ -1,4 +1,4 @@
-const DEFAULT = "group relative px-6 py-3 font-bold text-black";
+const DEFAULT = "inline-block group relative px-6 py-3 font-bold text-black";
 
 const SIZE = {
   sm: "px-2.5 py-1.5 text-xs",
@@ -17,14 +17,8 @@ const ICON = {
 };
 
 const STYLE = {
-  primary: [
-    "bg-white",
-    "text-black",
-  ],
-  secondary: [
-    "bg-black",
-    "text-black",
-  ],
+  primary: ["bg-white", "text-black"],
+  secondary: ["bg-black", "text-black"],
   white:
     "text-primary-500 hover:text-white bg-white hover:bg-primary-500 focus:ring-primary-500",
 };
