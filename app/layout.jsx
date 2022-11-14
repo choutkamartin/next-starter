@@ -1,17 +1,23 @@
+// Layouts are made differently in 13
+// You can use different layouts for different pages
+
 import { Header } from "components/Header";
-import { Inter, Bebas_Neue } from "@next/font/google";
+import { Footer } from "components/Footer";
+
+// Import Inter font from Google Fonts
+import { Inter } from "@next/font/google";
+
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
-import "styles/globals.css";
-import { Footer } from "components/Footer";
 
+import "styles/globals.css";
+
+// This is what you need to do to use imported Inter font
+// Keep in mind this font is a variable one
+// For correct functionality you then have to use it's classname inside body className
 const inter = Inter({
   variable: "--font-inter",
-});
-
-const bebas = Bebas_Neue({
-  weight: "400",
 });
 
 const Layout = ({ children }) => {
@@ -20,9 +26,11 @@ const Layout = ({ children }) => {
       <head>
         <title>Next.js 13</title>
       </head>
-      <body className={`${inter.variable} font-sans flex flex-col justify-between min-h-screen bg-gray-50`}>
+      <body
+        className={`${inter.variable} flex min-h-screen flex-col justify-between bg-gray-50 font-sans`}
+      >
         <Header />
-        <main className="mx-auto w-full max-w-5xl py-24">{children}</main>
+        <main className="mx-auto w-full max-w-7xl py-24">{children}</main>
         <Footer />
       </body>
     </html>

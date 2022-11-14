@@ -15,7 +15,7 @@ export default function Link({
 }) {
   const Inner = () => {
     return (
-      <span className="font-bebas link link-underline link-underline-black">
+      <span className="link link-underline link-underline-yellow">
         {icon && <FontAwesomeIcon icon={icon} />}
         {children}
       </span>

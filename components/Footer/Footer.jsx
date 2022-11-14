@@ -5,41 +5,20 @@ const links = [
     name: "Links",
     children: [
       {
-        name: "Link number 1",
-        href: "#",
+        name: "Index",
+        href: "/",
       },
       {
-        name: "Link number 2",
-        href: "#",
+        name: "Second page",
+        href: "/second-page",
       },
       {
-        name: "Link number 3",
-        href: "#",
+        name: "First page in group",
+        href: "/about/first-page",
       },
       {
-        name: "Link number 4",
-        href: "#",
-      },
-    ],
-  },
-  {
-    name: "Links",
-    children: [
-      {
-        name: "Link number 1",
-        href: "#",
-      },
-      {
-        name: "Link number 2",
-        href: "#",
-      },
-      {
-        name: "Link number 3",
-        href: "#",
-      },
-      {
-        name: "Link number 4",
-        href: "#",
+        name: "Second page in group",
+        href: "/about/second-page",
       },
     ],
   },
@@ -47,20 +26,8 @@ const links = [
     name: "Links",
     children: [
       {
-        name: "Link number 1",
-        href: "#",
-      },
-      {
-        name: "Link number 2",
-        href: "#",
-      },
-      {
-        name: "Link number 3",
-        href: "#",
-      },
-      {
-        name: "Link number 4",
-        href: "#",
+        name: "Not found",
+        href: "/not-founs",
       },
     ],
   },
@@ -68,19 +35,19 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-16">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-3">
+    <footer>
+      <div className="mx-auto grid max-w-7xl grid-cols-1 border-t border-black py-16 lg:grid-cols-3">
         {links.map((item, index) => {
           return (
             <div className="flex flex-col space-y-8" key={index}>
-              <h2 className="text-xl font-bold uppercase tracking-widest text-white">
+              <h2 className="text-xl font-bold uppercase tracking-widest text-black">
                 {item.name}
               </h2>
               <ul className="flex flex-col space-y-4">
                 {item.children.map((child, index) => {
                   return (
                     <li key={index}>
-                      <Link href={child.href} as="link">
+                      <Link href={child.href} as="link" style="secondary">
                         {child.name}
                       </Link>
                     </li>

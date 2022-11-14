@@ -8,7 +8,7 @@ const Page = () => {
         This little website is a starter project to showcase all the new things
         new version of Next.js has to offer.
       </p>
-      <div className="flex space-x-4 mt-8">
+      <div className="mt-8 flex space-x-4">
         <Button
           as="link"
           href="/second-page"
@@ -27,6 +27,11 @@ const Page = () => {
         >
           This will invoke a notFound function
         </Button>
+      </div>
+      <div className="prose  mt-4">
+        <pre>
+          <code>'use client';</code>
+        </pre>
       </div>
     </>
   );

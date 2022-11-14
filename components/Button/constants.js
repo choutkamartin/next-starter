@@ -18,8 +18,14 @@ const ICON = {
 };
 
 const STYLE = {
-  primary: ["bg-white", "bg-black border-white text-white hover:text-black"],
-  secondary: ["bg-black", "bg-white border-black text-black hover:text-white"],
+  primary: [
+    "bg-white",
+    "bg-green-100 border-black text-black hover:text-black",
+  ],
+  secondary: [
+    "bg-black",
+    "bg-yellow-100 border-black text-black hover:text-white",
+  ],
   white:
     "text-primary-500 hover:text-white bg-white hover:bg-primary-500 focus:ring-primary-500",
 };

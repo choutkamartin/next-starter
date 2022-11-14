@@ -6,7 +6,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./styles/constants/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -28,8 +27,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["var(--font-inter)", ...fontFamily.sans],
-      bebas: ["var(--font-bebas)"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

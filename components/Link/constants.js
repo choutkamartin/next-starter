@@ -1,4 +1,4 @@
-const DEFAULT = "tracking-widest";
+const DEFAULT = "tracking-widest transition-colors";
 
 const SIZE = {
   sm: "text-sm",
@@ -10,7 +10,7 @@ const SIZE = {
 
 const STYLE = {
   primary: "text-white hover:text-white",
-  secondary: "text-white hover:text-primary",
+  secondary: "text-black hover:text-green-700",
 };
 
 export { DEFAULT, SIZE, STYLE };

@@ -1,3 +1,5 @@
+// Error component has to be used as a client, otherwise it doesn't work
+
 "use client";
 
 const Error = () => {
