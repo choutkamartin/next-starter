@@ -1,4 +1,4 @@
-const DEFAULT = "font-square tracking-widest transition-colors";
+const DEFAULT = "tracking-widest";
 
 const SIZE = {
   sm: "text-sm",

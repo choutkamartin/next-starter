@@ -22,4 +22,12 @@
     background-size: 100% 3px;
     background-position: 0 100%;
   }
+
+  .btn-animate span:first-child {
+    transform: translateX(-101%);
+    transition: transform 0.3s ease-in;
+  }
+  .btn-animate:hover span {
+    transform: translateX(0);
+  }
 }

@@ -1,6 +1,6 @@
 import * as NextLink from "next/link";
 import { joinClassNames } from "utils/helpers";
-import { DEFAULT, SIZE, STYLE } from "styles/constants/link";
+import { DEFAULT, SIZE, STYLE } from "components/Link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Link({
@@ -15,10 +15,10 @@ export default function Link({
 }) {
   const Inner = () => {
     return (
-      <>
+      <span className="font-bebas link link-underline link-underline-black">
         {icon && <FontAwesomeIcon icon={icon} />}
         {children}
-      </>
+      </span>
     );
   };
 

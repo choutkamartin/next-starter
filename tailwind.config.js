@@ -28,6 +28,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["var(--font-inter)", ...fontFamily.sans],
+      bebas: ["var(--font-bebas)"],
     },
   },
   plugins: [],
