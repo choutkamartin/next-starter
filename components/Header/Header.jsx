@@ -26,15 +26,15 @@ const links = [
 
 const Header = () => {
   return (
-    <header>
-      <div className="mx-auto flex max-w-7xl items-center justify-between border-b border-black py-6">
+    <header className="px-4">
+      <div className="mx-auto flex max-w-7xl flex-col flex-wrap lg:items-center justify-between gap-8 border-b border-black py-6 lg:flex-row">
         <div className="text-black">
           <div className="text-xl font-bold uppercase tracking-widest">
             Next.js 13
           </div>
           <span>Starter pack</span>
         </div>
-        <nav className="flex gap-x-8">
+        <nav className="flex flex-col gap-4 lg:flex-row">
           {links.map((item, index) => {
             return (
               <Link href={item.href} style="secondary" as="link" key={index}>

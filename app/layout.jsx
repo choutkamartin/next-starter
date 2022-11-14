@@ -24,13 +24,14 @@ const Layout = ({ children }) => {
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Next.js 13</title>
       </head>
       <body
         className={`${inter.variable} flex min-h-screen flex-col justify-between bg-gray-50 font-sans`}
       >
         <Header />
-        <main className="mx-auto w-full max-w-7xl py-24">{children}</main>
+        <main className="mx-auto w-full max-w-7xl py-24 px-4">{children}</main>
         <Footer />
       </body>
     </html>

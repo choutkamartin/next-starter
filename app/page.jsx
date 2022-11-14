@@ -8,7 +8,7 @@ const Page = () => {
         This little website is a starter project to showcase all the new things
         new version of Next.js has to offer.
       </p>
-      <div className="mt-8 flex space-x-4">
+      <div className="mt-8 flex flex-wrap gap-4">
         <Button
           as="link"
           href="/second-page"

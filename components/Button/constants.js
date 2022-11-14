@@ -1,5 +1,4 @@
-const DEFAULT =
-  "inline-block btn-animate px-10 py-5 relative border uppercase font-semibold tracking-widest leading-none overflow-hidden";
+const DEFAULT = "group relative px-6 py-3 font-bold text-black";
 
 const SIZE = {
   sm: "px-2.5 py-1.5 text-xs",
@@ -20,11 +19,11 @@ const ICON = {
 const STYLE = {
   primary: [
     "bg-white",
-    "bg-green-100 border-black text-black hover:text-black",
+    "text-black",
   ],
   secondary: [
     "bg-black",
-    "bg-yellow-100 border-black text-black hover:text-white",
+    "text-black",
   ],
   white:
     "text-primary-500 hover:text-white bg-white hover:bg-primary-500 focus:ring-primary-500",

@@ -18,15 +18,13 @@ export default function Button({
   const Inner = () => {
     return (
       <>
-        <span
-          className={joinClassNames("absolute inset-0", STYLE[style][0])}
-        ></span>
-        <span className="absolute inset-0 flex items-center justify-center font-bold">
+        <span className="absolute inset-0 h-full w-full -translate-x-2 -translate-y-2 transform bg-red-300 transition duration-300 ease-out group-hover:translate-x-0 group-hover:translate-y-0"></span>
+        <span className="absolute inset-0 h-full w-full border-4 border-black"></span>
+        <span className="relative">
           {spin && <FontAwesomeIcon icon={faSpinner} spin />}
           {icon && <FontAwesomeIcon icon={icon} />}
           {children}
         </span>
-        {children}
       </>
     );
   };

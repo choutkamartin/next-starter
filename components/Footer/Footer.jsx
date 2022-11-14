@@ -27,7 +27,7 @@ const links = [
     children: [
       {
         name: "Not found",
-        href: "/not-founs",
+        href: "/not-found",
       },
     ],
   },
@@ -35,8 +35,8 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 border-t border-black py-16 lg:grid-cols-3">
+    <footer className="px-4">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 space-y-8 border-t border-black py-16 lg:grid-cols-3">
         {links.map((item, index) => {
           return (
             <div className="flex flex-col space-y-8" key={index}>
